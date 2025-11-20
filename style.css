@@ -44,17 +44,24 @@ nav a {
 }
 
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 25px;
-    text-decoration: none;
-    box-shadow: 0 0 5px #555;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  box-shadow: 0 0 5px #555;
+  animation: pulse 2s infinite;
 }
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
 
 footer {
     background: #333;
