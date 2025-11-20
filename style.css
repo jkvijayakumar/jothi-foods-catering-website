@@ -1,68 +1,215 @@
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background: #fff8e6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background: #fff8e6;
+    color: #2c3e50;
 }
 
-header {
-    background: #c0392b;
-    color: white;
-    padding: 20px;
+/* --- Header / Hero --- */
+header.hero {
+    background: url('../images/hero-banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: white;
     position: relative;
 }
 
+header.hero::after {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    margin: 0.2em 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 0.2em 0 1em 0;
+}
+
+.btn-book {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #f39c12;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-book:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* --- Navigation --- */
 nav {
-    background: #a93226;
-    padding: 10px;
+    background: #c0392b;
     text-align: center;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
 }
 
+nav a:hover {
+    color: #f39c12;
+}
+
+/* --- Language buttons --- */
 .lang-buttons {
     position: absolute;
-    right: 15px;
     top: 15px;
+    right: 15px;
 }
 
 .lang-buttons button {
     background: white;
+    color: #c0392b;
     border: none;
     padding: 5px 10px;
     margin-left: 5px;
     cursor: pointer;
-    color: #c0392b;
     font-weight: bold;
 }
 
+/* --- Sections --- */
+section {
+    padding: 30px 20px;
+}
+
+/* --- Dish Cards --- */
+.dish-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: #fff8e6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    color: #c0392b;
+}
+
+/* --- Gallery --- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* --- WhatsApp Floating Button --- */
 .whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 25px;
-  box-shadow: 0 0 5px #555;
-  animation: pulse 2s infinite;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: 0 0 5px #555;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
 }
 
+/* --- Forms --- */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e74c3c;
+}
+
+/* --- Footer --- */
 footer {
     background: #333;
     color: white;
@@ -71,141 +218,3 @@ footer {
     margin-top: 40px;
 }
 
-section {
-    padding: 20px;
-    line-height: 1.8;
-}
-
-.contact-box, form {
-    background: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background: #c0392b;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px;
-}
-
-.gallery img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 5px #333;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-
-.dish-category {
-    background: #c0392b;
-    color: white;
-    padding: 10px;
-    font-size: 22px;
-    margin-top: 30px;
-}
-
-ul.dish-list {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-ul.dish-list li {
-    font-size: 18px;
-    padding: 5px 0;
-}
-
-.hero {
-  background: url('assets/images/hero-banner.jpg') no-repeat center center;
-  background-size: cover;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  position: relative;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(0,0,0,0.4);
-}
-
-.btn-book {
-  display: inline-block;
-  padding: 15px 30px;
-  background: #f39c12;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-book:hover {
-  background: #e67e22;
-  transform: scale(1.05);
-}
-
-.dish-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  width: 250px;
-  background: #fff8e6;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-  text-align: center;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 10px;
-  color: #c0392b;
-}
