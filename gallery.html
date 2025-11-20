@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Jothi Foods</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+function switchLanguage(lang){
+    document.querySelectorAll("[data-en]").forEach(el=>{
+        el.innerText = el.getAttribute("data-"+lang);
+    });
+}
+</script>
+</head>
+
+<body>
+
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+
+<header>
+<h1 data-en="Photo Gallery" data-ta="புகைப்பட கேலரி">Photo Gallery</h1>
+
+<div class="lang-buttons">
+<button onclick="switchLanguage('en')">EN</button>
+<button onclick="switchLanguage('ta')">TA</button>
+</div>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="dishes.html">Our Dishes</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+<section class="gallery">
+<img src="assets/images/placeholder1.jpg" alt="">
+<img src="assets/images/placeholder2.jpg" alt="">
+<img src="assets/images/placeholder3.jpg" alt="">
+<img src="assets/images/placeholder4.jpg" alt="">
+<img src="assets/images/placeholder5.jpg" alt="">
+<img src="assets/images/placeholder6.jpg" alt="">
+<img src="assets/images/placeholder7.jpg" alt="">
+<img src="assets/images/placeholder8.jpg" alt="">
+</section>
+
+<footer>
+© 2025 Jothi Foods & Caterings
+</footer>
+
+</body>
+</html>
