@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dishes - Jothi Foods</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+function switchLanguage(lang){
+    document.querySelectorAll("[data-en]").forEach(el=>{
+        el.innerText = el.getAttribute("data-"+lang);
+    });
+}
+</script>
+</head>
+
+<body>
+
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+
+<header>
+<h1 data-en="Our Dishes" data-ta="எங்கள் உணவுகள்">Our Dishes</h1>
+
+<div class="lang-buttons">
+<button onclick="switchLanguage('en')">EN</button>
+<button onclick="switchLanguage('ta')">TA</button>
+</div>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="dishes.html">Our Dishes</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+<section>
+
+<h2 class="dish-category" data-en="Vegetarian Dishes" data-ta="சைவ உணவுகள்">Vegetarian Dishes</h2>
+
+<ul class="dish-list">
+<li>Gulab Jamun</li>
+<li>Cauliflower Chilli</li>
+<li>Idly</li>
+<li>Podi Dosa</li>
+<li>Rava Dosa</li>
+<li>Sambar</li>
+<li>Coconut Chutney</li>
+<li>Tomato Chutney</li>
+<li>Romeli Roti</li>
+<li>Paneer Butter Masala</li>
+<li>Mushroom Biryani</li>
+<li>Curd Raita</li>
+<li>Pumpkin Halwa</li>
+<li>Medu Vada</li>
+<li>Onion Uthappam</li>
+<li>Beetroot Poori</li>
+<li>Potato Masala</li>
+<li>Rava Khichdi</li>
+<li>Ven Pongal</li>
+<li>White Rice</li>
+<li>Uppu Paruppu</li>
+<li>Okra Tamarind Gravy</li>
+<li>Tomato Rasam</li>
+<li>Buttermilk</li>
+<li>Paruppu Vada</li>
+<li>Javvarisi Payasam</li>
+<li>Pappad</li>
+<li>Potato Podimas</li>
+<li>Pickles</li>
+<li>Tomato Rice</li>
+<li>Brinjal Potato Poriyal</li>
+<li>Wheat Upma</li>
+<li>Kathamba Poriyal</li>
+<li>Mysore Pak</li>
+<li>Cabbage Potato Fry</li>
+</ul>
+
+
+<h2 class="dish-category" data-en="Non-Vegetarian Dishes" data-ta="அசைவ உணவுகள்">Non-Vegetarian Dishes</h2>
+
+<ul class="dish-list">
+<li>Mutton Biryani</li>
+<li>Egg Masala</li>
+<li>Chicken Chinthamani Varuval</li>
+<li>Kudal Gravy</li>
+<li>Chicken Elumbu Kuzhambu</li>
+<li>Nattukozhi Chinthamani Varuval</li>
+<li>Mutton Chinthamani Varuval</li>
+<li>Mutton Kuzhambu</li>
+<li>Fish Fry</li>
+<li>Fish Chilli</li>
+<li>Kudal Varuval</li>
+</ul>
+
+</section>
+
+<footer>
+© 2025 Jothi Foods & Caterings
+</footer>
+
+</body>
+</html>
