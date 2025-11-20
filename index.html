@@ -5,72 +5,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jothi Foods & Caterings</title>
 <link rel="stylesheet" href="assets/css/style.css">
-
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script>
 function switchLanguage(lang){
     document.querySelectorAll("[data-en]").forEach(el=>{
-        el.innerText = el.getAttribute("data-" + lang);
+        el.innerText = el.getAttribute("data-"+lang);
     });
 }
 </script>
 </head>
-
 <body>
 
-<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
+<!-- Hero Section -->
 <header class="hero">
-    <div class="hero-text">
-<h1 data-en="Jothi Foods and Caterings" data-ta="ஜோதி உணவுகள் மற்றும் கேட்டரிங்">Jothi Foods and Caterings</h1>
-<p data-en="20 Years of Delicious, Hygienic & Affordable Catering Service"
-   data-ta="20 ஆண்டுகளாக சுவையான, சுத்தமான மற்றும் குறைந்த செலவிலான கேட்டரிங் சேவை">
-   20 Years of Delicious, Hygienic & Affordable Catering Service
-</p>
- </div>
-<div class="lang-buttons">
-<button onclick="switchLanguage('en')">EN</button>
-<button onclick="switchLanguage('ta')">TA</button>
-</div>
+  <div class="hero-text">
+    <h1 data-en="Jothi Foods & Caterings" data-ta="ஜோதி உணவுகள் & கேட்டரிங்">Jothi Foods & Caterings</h1>
+    <p data-en="Delicious & Hygienic Food for All Occasions" data-ta="அனைத்து நிகழ்வுகளுக்கும் சுகாதாரமான மற்றும் சுவையான உணவு">Delicious & Hygienic Food for All Occasions</p>
+    <a href="booking.html" class="btn-book" data-en="Book Now" data-ta="முன்பதிவு செய்யவும்">Book Now</a>
+  </div>
+  <div class="lang-buttons">
+    <button onclick="switchLanguage('en')">EN</button>
+    <button onclick="switchLanguage('ta')">TA</button>
+  </div>
 </header>
 
+<!-- Navigation -->
 <nav>
-<a href="index.html">Home</a>
-<a href="dishes.html">Our Dishes</a>
-<a href="booking.html">Booking</a>
-<a href="contact.html">Contact</a>
-<a href="gallery.html">Gallery</a>
+<a href="index.html" data-en="Home" data-ta="முகப்பு">Home</a>
+<a href="dishes.html" data-en="Our Dishes" data-ta="உணவுகள்">Our Dishes</a>
+<a href="booking.html" data-en="Booking" data-ta="முன்பதிவு">Booking</a>
+<a href="contact.html" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+<a href="gallery.html" data-en="Gallery" data-ta="கேலரி">Gallery</a>
 </nav>
 
+<!-- Services Section -->
 <section>
-<h2 data-en="Why Choose Us?" data-ta="ஏன் எங்களை தேர்வு செய்யவேண்டும்?">Why Choose Us?</h2>
+<h2 data-en="Our Services" data-ta="எங்கள் சேவைகள்" style="text-align:center;color:#c0392b;">Our Services</h2>
+<div class="dish-cards">
+  <div class="card">
+    <i class="fas fa-ring fa-3x" style="color:#f39c12;margin-top:15px;"></i>
+    <h3 data-en="Wedding Catering" data-ta="மணமகன் மனைவி உணவு சேவை">Wedding Catering</h3>
+  </div>
+  <div class="card">
+    <i class="fas fa-heart fa-3x" style="color:#f39c12;margin-top:15px;"></i>
+    <h3 data-en="Engagement" data-ta="முகாமை">Engagement</h3>
+  </div>
+  <div class="card">
+    <i class="fas fa-home fa-3x" style="color:#f39c12;margin-top:15px;"></i>
+    <h3 data-en="House Warming" data-ta="வீட்டு பரிசு">House Warming</h3>
+  </div>
+  <div class="card">
+    <i class="fas fa-birthday-cake fa-3x" style="color:#f39c12;margin-top:15px;"></i>
+    <h3 data-en="Birthday Parties" data-ta="பிறந்தநாள் விழா">Birthday Parties</h3>
+  </div>
+</div>
+</section>
 
-<ul>
-<li>20+ Years of Experience</li>
-<li>Delicious & Hygienic Food</li>
-<li>Perfect Timing</li>
-<li>No Grocery/Waste Loss</li>
-<li>Buffet & Banana Leaf Serving</li>
-<li>Trained Service Staff</li>
-<li>Special Items: Chinthamani Varuval, Seeraga Samba Biriyani, Mysurpak & Halwa</li>
-<li>Very Low Cost</li>
-</ul>
-
-<h2 data-en="We Serve All Events" data-ta="எல்லா நிகழ்வுகளுக்கும் சேவை">We Serve All Events</h2>
-
-<ul>
-<li>Marriage</li>
-<li>Engagement</li>
-<li>House Warming</li>
-<li>Ear Piercing</li>
-<li>Birthday Functions</li>
-<li>Corporate Events</li>
-</ul>
-
+<!-- Testimonials Section -->
+<section>
+<h2 data-en="Happy Customers" data-ta="மகிழ்ச்சியான வாடிக்கையாளர்கள்" style="text-align:center;color:#c0392b;">Happy Customers</h2>
+<div class="dish-cards">
+  <div class="card">
+    <p>"The food was delicious and served hygienically. Highly recommend!"</p>
+    <h4>- Ramesh</h4>
+  </div>
+  <div class="card">
+    <p>"Best catering service for weddings and birthdays. On-time and excellent taste."</p>
+    <h4>- Priya</h4>
+  </div>
+</div>
 </section>
 
 <footer>
 © 2025 Jothi Foods & Caterings
 </footer>
-
 </body>
 </html>
