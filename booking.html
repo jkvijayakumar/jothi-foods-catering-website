@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking - Jothi Foods</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+function switchLanguage(lang){
+    document.querySelectorAll("[data-en]").forEach(el=>{
+        el.innerText = el.getAttribute("data-"+lang);
+    });
+}
+
+function sendWhatsApp(){
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let people = document.getElementById("people").value;
+    let message = document.getElementById("message").value;
+
+    let url =
+    "https://wa.me/9087303284?text=" +
+    "Booking Details:%0A" +
+    "Name: " + name + "%0A" +
+    "Date: " + date + "%0A" +
+    "People: " + people + "%0A" +
+    "Message: " + message;
+
+    window.open(url, "_blank");
+}
+</script>
+</head>
+
+<body>
+
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+
+<header>
+<h1 data-en="Online Booking" data-ta="ஆன்லைன் முன்பதிவு">Online Booking</h1>
+
+<div class="lang-buttons">
+<button onclick="switchLanguage('en')">EN</button>
+<button onclick="switchLanguage('ta')">TA</button>
+</div>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="dishes.html">Our Dishes</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+<form>
+
+<label data-en="Your Name" data-ta="உங்கள் பெயர்">Your Name</label>
+<input type="text" id="name" required>
+
+<label data-en="Event Date" data-ta="நிகழ்வு தேதி">Event Date</label>
+<input type="date" id="date" required>
+
+<label data-en="Number of People" data-ta="எத்தனை பேர்">Number of People</label>
+<input type="number" id="people" required>
+
+<label data-en="Message / Special Requests" 
+       data-ta="செய்தி / சிறப்பு கோரிக்கை">
+       Message / Special Requests</label>
+<textarea id="message"></textarea>
+
+<button type="button" onclick="sendWhatsApp()"
+data-en="Send via WhatsApp" data-ta="வாட்ஸ்அப்பில் அனுப்பவும்">
+Send via WhatsApp
+</button>
+
+</form>
+
+<footer>
+© 2025 Jothi Foods & Caterings
+</footer>
+
+</body>
+</html>
