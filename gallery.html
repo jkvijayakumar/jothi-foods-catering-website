@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery - Jothi Foods</title>
+<title>Gallery - Jothi Foods & Caterings</title>
 <link rel="stylesheet" href="assets/css/style.css">
-
 <script>
 function switchLanguage(lang){
     document.querySelectorAll("[data-en]").forEach(el=>{
@@ -14,46 +13,40 @@ function switchLanguage(lang){
 }
 </script>
 </head>
-
 <body>
 
-<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-<header>
-<h1 data-en="Photo Gallery" data-ta="புகைப்பட கேலரி">Photo Gallery</h1>
-
-<div class="lang-buttons">
-<button onclick="switchLanguage('en')">EN</button>
-<button onclick="switchLanguage('ta')">TA</button>
-</div>
+<header class="hero">
+  <div class="hero-text">
+    <h1 data-en="Gallery" data-ta="கேலரி">Gallery</h1>
+  </div>
+  <div class="lang-buttons">
+    <button onclick="switchLanguage('en')">EN</button>
+    <button onclick="switchLanguage('ta')">TA</button>
+  </div>
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="dishes.html">Our Dishes</a>
-<a href="booking.html">Booking</a>
-<a href="contact.html">Contact</a>
-<a href="gallery.html">Gallery</a>
+<a href="index.html" data-en="Home" data-ta="முகப்பு">Home</a>
+<a href="dishes.html" data-en="Our Dishes" data-ta="உணவுகள்">Our Dishes</a>
+<a href="booking.html" data-en="Booking" data-ta="முன்பதிவு">Booking</a>
+<a href="contact.html" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+<a href="gallery.html" data-en="Gallery" data-ta="கேலரி">Gallery</a>
 </nav>
 
-<section class="gallery">
-  <a href="assets/images/gallery1.jpg" target="_blank">
-    <img src="assets/images/gallery1.jpg" alt="">
-  </a>
-  <a href="assets/images/gallery2.jpg" target="_blank">
-    <img src="assets/images/gallery2.jpg" alt="">
-  </a>
-<img src="assets/images/placeholder3.jpg" alt="">
-<img src="assets/images/placeholder4.jpg" alt="">
-<img src="assets/images/placeholder5.jpg" alt="">
-<img src="assets/images/placeholder6.jpg" alt="">
-<img src="assets/images/placeholder7.jpg" alt="">
-<img src="assets/images/placeholder8.jpg" alt="">
+<section>
+<h2 data-en="Photo Gallery" data-ta="புகைப்பட கேலரி" style="text-align:center;color:#c0392b;">Photo Gallery</h2>
+<div class="gallery">
+  <a href="assets/images/gallery1.jpg" target="_blank"><img src="assets/images/gallery1.jpg" alt="Gallery Image 1"></a>
+  <a href="assets/images/gallery2.jpg" target="_blank"><img src="assets/images/gallery2.jpg" alt="Gallery Image 2"></a>
+  <a href="assets/images/gallery3.jpg" target="_blank"><img src="assets/images/gallery3.jpg" alt="Gallery Image 3"></a>
+  <a href="assets/images/gallery4.jpg" target="_blank"><img src="assets/images/gallery4.jpg" alt="Gallery Image 4"></a>
+</div>
 </section>
 
 <footer>
 © 2025 Jothi Foods & Caterings
 </footer>
-
 </body>
 </html>
