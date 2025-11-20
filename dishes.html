@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dishes - Jothi Foods</title>
+<title>Our Dishes - Jothi Foods & Caterings</title>
 <link rel="stylesheet" href="assets/css/style.css">
-
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script>
 function switchLanguage(lang){
     document.querySelectorAll("[data-en]").forEach(el=>{
@@ -14,92 +14,65 @@ function switchLanguage(lang){
 }
 </script>
 </head>
-
 <body>
 
-<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-<header>
-<h1 data-en="Our Dishes" data-ta="எங்கள் உணவுகள்">Our Dishes</h1>
-
-<div class="lang-buttons">
-<button onclick="switchLanguage('en')">EN</button>
-<button onclick="switchLanguage('ta')">TA</button>
-</div>
+<header class="hero">
+  <div class="hero-text">
+    <h1 data-en="Our Dishes" data-ta="உணவுகள்">Our Dishes</h1>
+    <p data-en="Delicious food prepared hygienically for all occasions" data-ta="அனைத்து நிகழ்வுகளுக்கும் சுகாதாரமாக தயாரிக்கப்பட்ட சுவையான உணவு">Delicious food prepared hygienically for all occasions</p>
+  </div>
+  <div class="lang-buttons">
+    <button onclick="switchLanguage('en')">EN</button>
+    <button onclick="switchLanguage('ta')">TA</button>
+  </div>
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="dishes.html">Our Dishes</a>
-<a href="booking.html">Booking</a>
-<a href="contact.html">Contact</a>
-<a href="gallery.html">Gallery</a>
+<a href="index.html" data-en="Home" data-ta="முகப்பு">Home</a>
+<a href="dishes.html" data-en="Our Dishes" data-ta="உணவுகள்">Our Dishes</a>
+<a href="booking.html" data-en="Booking" data-ta="முன்பதிவு">Booking</a>
+<a href="contact.html" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+<a href="gallery.html" data-en="Gallery" data-ta="கேலரி">Gallery</a>
 </nav>
 
 <section>
+<h2 data-en="Vegetarian Dishes" data-ta="சைவ உணவுகள்" style="text-align:center;color:#c0392b;">Vegetarian Dishes</h2>
+<div class="dish-cards">
+  <div class="card">
+    <img src="assets/images/veg-dish1.jpg" alt="Gulab Jamun">
+    <h3 data-en="Gulab Jamun" data-ta="குலாப் ஜாமன்">Gulab Jamun</h3>
+  </div>
+  <div class="card">
+    <img src="assets/images/veg-dish2.jpg" alt="Paneer Butter Masala">
+    <h3 data-en="Paneer Butter Masala" data-ta="பனீர் பட்டர் மசாலா">Paneer Butter Masala</h3>
+  </div>
+  <div class="card">
+    <img src="assets/images/veg-dish3.jpg" alt="Seeraga Samba Biryani">
+    <h3 data-en="Seeraga Samba Biryani" data-ta="சீரக சம்பா பிரியாணி">Seeraga Samba Biryani</h3>
+  </div>
+</div>
 
-<h2 class="dish-category" data-en="Vegetarian Dishes" data-ta="சைவ உணவுகள்">Vegetarian Dishes</h2>
-
-<ul class="dish-list">
-<li>Gulab Jamun</li>
-<li>Cauliflower Chilli</li>
-<li>Idly</li>
-<li>Podi Dosa</li>
-<li>Rava Dosa</li>
-<li>Sambar</li>
-<li>Coconut Chutney</li>
-<li>Tomato Chutney</li>
-<li>Romeli Roti</li>
-<li>Paneer Butter Masala</li>
-<li>Mushroom Biryani</li>
-<li>Curd Raita</li>
-<li>Pumpkin Halwa</li>
-<li>Medu Vada</li>
-<li>Onion Uthappam</li>
-<li>Beetroot Poori</li>
-<li>Potato Masala</li>
-<li>Rava Khichdi</li>
-<li>Ven Pongal</li>
-<li>White Rice</li>
-<li>Uppu Paruppu</li>
-<li>Okra Tamarind Gravy</li>
-<li>Tomato Rasam</li>
-<li>Buttermilk</li>
-<li>Paruppu Vada</li>
-<li>Javvarisi Payasam</li>
-<li>Pappad</li>
-<li>Potato Podimas</li>
-<li>Pickles</li>
-<li>Tomato Rice</li>
-<li>Brinjal Potato Poriyal</li>
-<li>Wheat Upma</li>
-<li>Kathamba Poriyal</li>
-<li>Mysore Pak</li>
-<li>Cabbage Potato Fry</li>
-</ul>
-
-
-<h2 class="dish-category" data-en="Non-Vegetarian Dishes" data-ta="அசைவ உணவுகள்">Non-Vegetarian Dishes</h2>
-
-<ul class="dish-list">
-<li>Mutton Biryani</li>
-<li>Egg Masala</li>
-<li>Chicken Chinthamani Varuval</li>
-<li>Kudal Gravy</li>
-<li>Chicken Elumbu Kuzhambu</li>
-<li>Nattukozhi Chinthamani Varuval</li>
-<li>Mutton Chinthamani Varuval</li>
-<li>Mutton Kuzhambu</li>
-<li>Fish Fry</li>
-<li>Fish Chilli</li>
-<li>Kudal Varuval</li>
-</ul>
-
+<h2 data-en="Non-Vegetarian Dishes" data-ta="இறைச்சி உணவுகள்" style="text-align:center;color:#c0392b;">Non-Vegetarian Dishes</h2>
+<div class="dish-cards">
+  <div class="card">
+    <img src="assets/images/nonveg-dish1.jpg" alt="Chicken Chintamani Varuval">
+    <h3 data-en="Chicken Chintamani Varuval" data-ta="சிக்கன் சிந்தாமணி வறுவல்">Chicken Chintamani Varuval</h3>
+  </div>
+  <div class="card">
+    <img src="assets/images/nonveg-dish2.jpg" alt="Mutton Biryani">
+    <h3 data-en="Mutton Biryani" data-ta="மட்டன் பிரியாணி">Mutton Biryani</h3>
+  </div>
+  <div class="card">
+    <img src="assets/images/nonveg-dish3.jpg" alt="Fish Fry">
+    <h3 data-en="Fish Fry" data-ta="மீன் வறுவல்">Fish Fry</h3>
+  </div>
+</div>
 </section>
 
 <footer>
 © 2025 Jothi Foods & Caterings
 </footer>
-
 </body>
 </html>
