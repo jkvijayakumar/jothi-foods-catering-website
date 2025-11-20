@@ -128,3 +128,39 @@ ul.dish-list li {
     font-size: 18px;
     padding: 5px 0;
 }
+
+.hero {
+  background: url('assets/images/hero-banner.jpg') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.btn-book {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #f39c12;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #e67e22;
+  transform: scale(1.05);
+}
