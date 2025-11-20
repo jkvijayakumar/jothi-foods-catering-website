@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Jothi Foods</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+function switchLanguage(lang){
+    document.querySelectorAll("[data-en]").forEach(el=>{
+        el.innerText = el.getAttribute("data-"+lang);
+    });
+}
+</script>
+</head>
+
+<body>
+
+<a href="https://wa.me/9087303284" class="whatsapp" target="_blank">📱</a>
+
+<header>
+<h1 data-en="Contact Us" data-ta="எங்களை தொடர்பு கொள்ள">Contact Us</h1>
+
+<div class="lang-buttons">
+<button onclick="switchLanguage('en')">EN</button>
+<button onclick="switchLanguage('ta')">TA</button>
+</div>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="dishes.html">Our Dishes</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+<section class="contact-box">
+
+<h2 data-en="Reach Us" data-ta="எங்களை அணுக">Reach Us</h2>
+
+<p data-en="Phone: 9087303284" data-ta="தொலைபேசி: 9087303284">Phone: 9087303284</p>
+<p data-en="Email: jothifoods@gmail.com" data-ta="மின்னஞ்சல்: jothifoods@gmail.com">Email: jothifoods@gmail.com</p>
+<p data-en="Location: Tamil Nadu, India" data-ta="இடம்: தமிழ்நாடு, இந்தியா">Location: Tamil Nadu, India</p>
+
+<h3 data-en="WhatsApp" data-ta="வாட்ஸ்அப்">WhatsApp</h3>
+<p data-en="Click the green button to chat directly" 
+   data-ta="நேரடியாக பேச பச்சை பொத்தானை அழுத்தவும்">
+   Click the green button to chat directly
+</p>
+
+</section>
+
+<footer>
+© 2025 Jothi Foods & Caterings
+</footer>
+
+</body>
+</html>
