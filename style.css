@@ -95,20 +95,26 @@ button {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
 }
 
 .gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #333;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #333;
+  transition: transform 0.3s;
 }
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
 
 .dish-category {
     background: #c0392b;
